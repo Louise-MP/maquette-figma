@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!------------------------------------------------------------- HEADER ------------------------------------------------------------->
+    <header>
+        <div id="logo">
+            <a href=""><svg width="157" height="81" viewBox="0 0 157 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" id="fill-black" clip-rule="evenodd"
+                        d="M0 65.0501V0.90909H23.0617V22.9355H35.5727V0.90909H58.6344V29.7162C59.7965 26.6437 61.5117 23.9044 63.757 21.6094C68.3223 16.9431 74.7456 14.4553 82.1806 14.4553C89.4178 14.4553 95.7434 16.8058 100.259 21.4194C101.108 22.2863 101.879 23.2192 102.572 24.2128L99.4723 15.006H123.804L127.804 32.1669L131.868 15.006H156.298L139.161 65.9279C139.161 65.9288 139.16 65.9298 139.16 65.9307C137.825 69.9187 135.631 73.7468 131.983 76.5581C128.306 79.392 123.52 80.9091 117.533 80.9091C113.692 80.9091 109.905 80.3125 106.967 79.1508L103.637 77.8344L109.173 59.7512L112.986 61.0971C113.904 61.4211 114.635 61.6105 115.195 61.7095L106.99 37.3371C107.058 38.2176 107.093 39.115 107.093 40.028V43.6404H107.773L107.042 48.1388C106.163 53.5489 103.362 58.0788 98.9683 61.1963C94.6302 64.2743 88.9714 65.821 82.511 65.821C74.9624 65.821 68.4375 63.5433 63.7932 58.9202C61.5135 56.6509 59.7943 53.9235 58.6344 50.8333V65.0501H35.5727V43.0236H23.0617V65.0501H0ZM76.3283 47.4289C75.9042 46.4795 75.6828 45.3924 75.6828 44.2131V43.5523H103.216V40.028C103.216 39.9102 103.215 39.7927 103.214 39.6756C103.071 26.4209 94.8441 18.332 82.1806 18.332C69.0749 18.332 60.7048 27.0324 60.7048 40.1382C60.7048 53.8221 68.9648 61.9443 82.511 61.9443C92.4125 61.9443 99.3316 57.9416 102.109 51.3937C102.621 50.1851 102.993 48.8898 103.216 47.517H89.3392C88.4582 49.9124 85.9526 51.2615 82.8414 51.2615C79.6328 51.2615 77.3696 49.7601 76.3283 47.4289ZM135.485 64.6976L150.903 18.8827H134.934L127.996 48.1778H127.555L120.727 18.8827H104.868L119.736 63.0456L119.405 63.8166C118.558 65.763 116.378 66.0334 113.514 65.3091C112.934 65.1625 112.326 64.9751 111.696 64.7527L108.392 75.5457C109.152 75.8459 110.004 76.1065 110.928 76.322C111.318 76.4129 111.72 76.4957 112.133 76.5701C113.794 76.8695 115.631 77.0324 117.533 77.0324C128.161 77.0324 133.144 71.691 135.485 64.6976ZM19.185 4.78574V26.8122H39.4493V4.78574H54.7577V61.1734H39.4493V39.147H19.185V61.1734H3.87665V4.78574H19.185ZM75.6828 35.1822H89.2291C89.1945 33.6626 88.6738 32.3355 87.8037 31.3056C86.593 29.8724 84.7058 29.0148 82.511 29.0148C80.3424 29.0148 78.408 29.8677 77.1564 31.3056C76.2628 32.3321 75.7172 33.6568 75.6828 35.1822Z"
+                        fill="#FFFF93" />
+                </svg></a>
+        </div>
+        <div class="social-media">
+            <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M13.3333 10C13.3333 9.07989 13.0074 8.29432 12.3564 7.64332C11.7054 6.99231 10.9199 6.66642 9.99973 6.66642C9.07961 6.66642 8.29404 6.99231 7.64304 7.64332C6.99203 8.29432 6.66614 9.07989 6.66614 10C6.66614 10.9201 6.99203 11.7057 7.64304 12.3567C8.29404 13.0077 9.07961 13.3328 9.99973 13.3328C10.9199 13.3328 11.7054 13.0077 12.3564 12.3567C13.0074 11.7057 13.3333 10.9201 13.3333 10ZM15.1305 9.99994C15.1305 11.4233 14.6312 12.6343 13.6333 13.6322C12.6346 14.6309 11.4236 15.1302 10.0002 15.1302C8.57686 15.1302 7.36585 14.6309 6.36717 13.6322C5.36927 12.6343 4.86993 11.4233 4.86993 9.99994C4.86993 8.57581 5.36927 7.36479 6.36717 6.3669C7.36585 5.36822 8.57686 4.86966 10.0002 4.86966C11.4236 4.86966 12.6346 5.36822 13.6333 6.3669C14.6312 7.36479 15.1305 8.57581 15.1305 9.99994ZM16.5364 4.6612C16.5364 4.99099 16.4189 5.27332 16.1848 5.50743C15.9507 5.74155 15.6684 5.85899 15.3386 5.85899C15.0088 5.85899 14.7265 5.74155 14.4924 5.50743C14.2575 5.27332 14.1408 4.99099 14.1408 4.6612C14.1408 4.33142 14.2575 4.04909 14.4924 3.81497C14.7265 3.58008 15.0088 3.46341 15.3386 3.46341C15.6684 3.46341 15.9507 3.58008 16.1848 3.81497C16.4189 4.04909 16.5364 4.33142 16.5364 4.6612ZM10.0001 1.79682C9.93939 1.79682 9.60728 1.79449 9.00371 1.78982C8.40093 1.78593 7.94281 1.78593 7.63014 1.78982C7.31747 1.79449 6.89902 1.80771 6.37402 1.82949C5.84823 1.85127 5.40178 1.89405 5.03234 1.95938C4.66367 2.02471 4.35333 2.10483 4.10133 2.20049C3.66732 2.37394 3.28543 2.62594 2.95565 2.95572C2.62587 3.28551 2.37386 3.6674 2.20042 4.1014C2.10475 4.35341 2.02464 4.66374 1.9593 5.03241C1.89475 5.40108 1.85119 5.84831 1.82941 6.37332C1.80763 6.8991 1.79441 7.31755 1.79052 7.63022C1.78586 7.94289 1.78586 8.40023 1.79052 9.00379C1.79441 9.60735 1.79675 9.93947 1.79675 10.0001C1.79675 10.0608 1.79441 10.3929 1.79052 10.9957C1.78586 11.5993 1.78586 12.0574 1.79052 12.37C1.79441 12.6819 1.80763 13.1012 1.82941 13.6262C1.85119 14.1512 1.89475 14.5984 1.9593 14.9671C2.02464 15.3365 2.10475 15.6469 2.20042 15.8981C2.37386 16.3321 2.62587 16.7148 2.95565 17.0445C3.28543 17.3743 3.66732 17.6256 4.10133 17.7998C4.35333 17.8947 4.66367 17.9756 5.03234 18.0401C5.40178 18.1054 5.84823 18.149 6.37402 18.1708C6.89902 18.1926 7.31747 18.205 7.63014 18.2097C7.94281 18.2143 8.40093 18.2143 9.00371 18.2097C9.60728 18.205 9.93939 18.2034 10.0001 18.2034C10.0607 18.2034 10.3928 18.205 10.9964 18.2097C11.5992 18.2143 12.0573 18.2143 12.37 18.2097C12.6826 18.205 13.1011 18.1926 13.6261 18.1708C14.1519 18.149 14.5983 18.1054 14.9678 18.0401C15.3364 17.9756 15.6468 17.8947 15.8988 17.7998C16.3328 17.6256 16.7147 17.3743 17.0445 17.0445C17.3742 16.7148 17.6263 16.3321 17.7997 15.8981C17.8954 15.6469 17.9755 15.3365 18.0408 14.9671C18.1054 14.5984 18.1489 14.1512 18.1707 13.6262C18.1925 13.1012 18.2057 12.6819 18.2096 12.37C18.2143 12.0574 18.2143 11.5993 18.2096 10.9957C18.2057 10.3929 18.2034 10.0608 18.2034 10.0001C18.2034 9.93947 18.2057 9.60735 18.2096 9.00379C18.2143 8.40023 18.2143 7.94289 18.2096 7.63022C18.2057 7.31755 18.1925 6.8991 18.1707 6.37332C18.1489 5.84831 18.1054 5.40108 18.0408 5.03241C17.9755 4.66374 17.8954 4.35341 17.7997 4.1014C17.6263 3.6674 17.3742 3.28551 17.0445 2.95572C16.7147 2.62594 16.3328 2.37394 15.8988 2.20049C15.6468 2.10483 15.3364 2.02471 14.9678 1.95938C14.5983 1.89405 14.1519 1.85127 13.6261 1.82949C13.1011 1.80771 12.6826 1.79449 12.37 1.78982C12.0573 1.78593 11.5992 1.78593 10.9964 1.78982C10.3928 1.79449 10.0607 1.79682 10.0001 1.79682ZM20 10C20 11.988 19.9782 13.3631 19.9347 14.1277C19.8483 15.933 19.3101 17.3306 18.3208 18.32C17.3306 19.3101 15.933 19.8483 14.1277 19.9347C13.3639 19.9782 11.988 20 10 20C8.01198 20 6.63607 19.9782 5.87229 19.9347C4.06705 19.8483 2.66936 19.3101 1.67924 18.32C0.689897 17.3306 0.151668 15.933 0.0653341 14.1277C0.021778 13.3631 0 11.988 0 10C0 8.01198 0.021778 6.63607 0.0653341 5.87229C0.151668 4.06627 0.689897 2.66859 1.67924 1.67924C2.66936 0.689897 4.06705 0.151668 5.87229 0.0645563C6.63607 0.0210002 8.01198 0 10 0C11.988 0 13.3639 0.0210002 14.1277 0.0645563C15.933 0.151668 17.3306 0.689897 18.3208 1.67924C19.3101 2.66859 19.8483 4.06627 19.9347 5.87229C19.9782 6.63607 20 8.01198 20 10Z"
+                        fill="black" />
+                </svg></a>
+            <a href=""><svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M19.894 2.08686C19.333 2.90736 18.655 3.60636 17.86 4.18386C17.8683 4.30086 17.8728 4.47636 17.8728 4.71111C17.8728 5.79936 17.7138 6.88536 17.395 7.96911C17.077 9.05361 16.594 10.0931 15.9453 11.0891C15.2965 12.0859 14.524 12.9664 13.6285 13.7321C12.733 14.4986 11.653 15.1091 10.3893 15.5659C9.12551 16.0219 7.77326 16.2499 6.33401 16.2499C4.06526 16.2499 1.98926 15.6431 0.10601 14.4296C0.39926 14.4626 0.72551 14.4799 1.08551 14.4799C2.96876 14.4799 4.64726 13.9016 6.12026 12.7466C5.24126 12.7301 4.45451 12.4601 3.76001 11.9366C3.06476 11.4139 2.58776 10.7464 2.32826 9.93411C2.60501 9.97611 2.86001 9.99711 3.09401 9.99711C3.45401 9.99711 3.81026 9.95136 4.16126 9.85911C3.22376 9.66636 2.44751 9.19986 1.83251 8.45886C1.21751 7.71786 0.90926 6.85836 0.90926 5.87886V5.82861C1.47851 6.14661 2.08976 6.31836 2.74301 6.34311C2.19026 5.97486 1.75076 5.49336 1.42451 4.89936C1.09826 4.30536 0.93476 3.66036 0.93476 2.96586C0.93476 2.22936 1.11851 1.54686 1.48751 0.919108C2.50001 2.16636 3.73226 3.16461 5.18501 3.91386C6.63701 4.66311 8.19176 5.07936 9.84926 5.16336C9.78251 4.84536 9.74876 4.53561 9.74876 4.23411C9.74876 3.11211 10.1448 2.15586 10.9353 1.36461C11.7265 0.574108 12.6828 0.178108 13.8048 0.178108C14.9763 0.178108 15.964 0.605608 16.7673 1.45911C17.68 1.28361 18.538 0.956608 19.3413 0.479608C19.0315 1.44261 18.4375 2.18736 17.5585 2.71461C18.337 2.63136 19.1155 2.42211 19.894 2.08686Z"
+                        fill="black" />
+                </svg></a>
+        </div>
+        <div id="menu" onclick="openNav()">
+            <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H16V2H0V0Z" fill="black" />
+                <path d="M0 5H16V7H0V5Z" fill="black" />
+                <path d="M16 10H0V12H16V10Z" fill="black" />
+            </svg>
+        </div>
+
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div id="logo" class="logo-side">
+                <a href=""><svg width="157" height="81" viewBox="0 0 157 81" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 65.0501V0.90909H23.0617V22.9355H35.5727V0.90909H58.6344V29.7162C59.7965 26.6437 61.5117 23.9044 63.757 21.6094C68.3223 16.9431 74.7456 14.4553 82.1806 14.4553C89.4178 14.4553 95.7434 16.8058 100.259 21.4194C101.108 22.2863 101.879 23.2192 102.572 24.2128L99.4723 15.006H123.804L127.804 32.1669L131.868 15.006H156.298L139.161 65.9279C139.161 65.9288 139.16 65.9298 139.16 65.9307C137.825 69.9187 135.631 73.7468 131.983 76.5581C128.306 79.392 123.52 80.9091 117.533 80.9091C113.692 80.9091 109.905 80.3125 106.967 79.1508L103.637 77.8344L109.173 59.7512L112.986 61.0971C113.904 61.4211 114.635 61.6105 115.195 61.7095L106.99 37.3371C107.058 38.2176 107.093 39.115 107.093 40.028V43.6404H107.773L107.042 48.1388C106.163 53.5489 103.362 58.0788 98.9683 61.1963C94.6302 64.2743 88.9714 65.821 82.511 65.821C74.9624 65.821 68.4375 63.5433 63.7932 58.9202C61.5135 56.6509 59.7943 53.9235 58.6344 50.8333V65.0501H35.5727V43.0236H23.0617V65.0501H0ZM76.3283 47.4289C75.9042 46.4795 75.6828 45.3924 75.6828 44.2131V43.5523H103.216V40.028C103.216 39.9102 103.215 39.7927 103.214 39.6756C103.071 26.4209 94.8441 18.332 82.1806 18.332C69.0749 18.332 60.7048 27.0324 60.7048 40.1382C60.7048 53.8221 68.9648 61.9443 82.511 61.9443C92.4125 61.9443 99.3316 57.9416 102.109 51.3937C102.621 50.1851 102.993 48.8898 103.216 47.517H89.3392C88.4582 49.9124 85.9526 51.2615 82.8414 51.2615C79.6328 51.2615 77.3696 49.7601 76.3283 47.4289ZM135.485 64.6976L150.903 18.8827H134.934L127.996 48.1778H127.555L120.727 18.8827H104.868L119.736 63.0456L119.405 63.8166C118.558 65.763 116.378 66.0334 113.514 65.3091C112.934 65.1625 112.326 64.9751 111.696 64.7527L108.392 75.5457C109.152 75.8459 110.004 76.1065 110.928 76.322C111.318 76.4129 111.72 76.4957 112.133 76.5701C113.794 76.8695 115.631 77.0324 117.533 77.0324C128.161 77.0324 133.144 71.691 135.485 64.6976ZM19.185 4.78574V26.8122H39.4493V4.78574H54.7577V61.1734H39.4493V39.147H19.185V61.1734H3.87665V4.78574H19.185ZM75.6828 35.1822H89.2291C89.1945 33.6626 88.6738 32.3355 87.8037 31.3056C86.593 29.8724 84.7058 29.0148 82.511 29.0148C80.3424 29.0148 78.408 29.8677 77.1564 31.3056C76.2628 32.3321 75.7172 33.6568 75.6828 35.1822Z"
+                            fill="black" />
+                    </svg></a>
+            </div>
+            <a href="#">Lorem ipsum</a>
+            <a href="#">Dolor sit</a>
+            <a href="#">Amet consectetur</a>
+            <a href="#">Adipisicing</a>
+            <a href="#">Elit</a>
+            <a href="#">Libero soluta</a>
+            <a class="contact-link" href="#">Contact</a>
+            <div class="social-media side">
+                <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.3333 10C13.3333 9.07989 13.0074 8.29432 12.3564 7.64332C11.7054 6.99231 10.9199 6.66642 9.99973 6.66642C9.07961 6.66642 8.29404 6.99231 7.64304 7.64332C6.99203 8.29432 6.66614 9.07989 6.66614 10C6.66614 10.9201 6.99203 11.7057 7.64304 12.3567C8.29404 13.0077 9.07961 13.3328 9.99973 13.3328C10.9199 13.3328 11.7054 13.0077 12.3564 12.3567C13.0074 11.7057 13.3333 10.9201 13.3333 10ZM15.1305 9.99994C15.1305 11.4233 14.6312 12.6343 13.6333 13.6322C12.6346 14.6309 11.4236 15.1302 10.0002 15.1302C8.57686 15.1302 7.36585 14.6309 6.36717 13.6322C5.36927 12.6343 4.86993 11.4233 4.86993 9.99994C4.86993 8.57581 5.36927 7.36479 6.36717 6.3669C7.36585 5.36822 8.57686 4.86966 10.0002 4.86966C11.4236 4.86966 12.6346 5.36822 13.6333 6.3669C14.6312 7.36479 15.1305 8.57581 15.1305 9.99994ZM16.5364 4.6612C16.5364 4.99099 16.4189 5.27332 16.1848 5.50743C15.9507 5.74155 15.6684 5.85899 15.3386 5.85899C15.0088 5.85899 14.7265 5.74155 14.4924 5.50743C14.2575 5.27332 14.1408 4.99099 14.1408 4.6612C14.1408 4.33142 14.2575 4.04909 14.4924 3.81497C14.7265 3.58008 15.0088 3.46341 15.3386 3.46341C15.6684 3.46341 15.9507 3.58008 16.1848 3.81497C16.4189 4.04909 16.5364 4.33142 16.5364 4.6612ZM10.0001 1.79682C9.93939 1.79682 9.60728 1.79449 9.00371 1.78982C8.40093 1.78593 7.94281 1.78593 7.63014 1.78982C7.31747 1.79449 6.89902 1.80771 6.37402 1.82949C5.84823 1.85127 5.40178 1.89405 5.03234 1.95938C4.66367 2.02471 4.35333 2.10483 4.10133 2.20049C3.66732 2.37394 3.28543 2.62594 2.95565 2.95572C2.62587 3.28551 2.37386 3.6674 2.20042 4.1014C2.10475 4.35341 2.02464 4.66374 1.9593 5.03241C1.89475 5.40108 1.85119 5.84831 1.82941 6.37332C1.80763 6.8991 1.79441 7.31755 1.79052 7.63022C1.78586 7.94289 1.78586 8.40023 1.79052 9.00379C1.79441 9.60735 1.79675 9.93947 1.79675 10.0001C1.79675 10.0608 1.79441 10.3929 1.79052 10.9957C1.78586 11.5993 1.78586 12.0574 1.79052 12.37C1.79441 12.6819 1.80763 13.1012 1.82941 13.6262C1.85119 14.1512 1.89475 14.5984 1.9593 14.9671C2.02464 15.3365 2.10475 15.6469 2.20042 15.8981C2.37386 16.3321 2.62587 16.7148 2.95565 17.0445C3.28543 17.3743 3.66732 17.6256 4.10133 17.7998C4.35333 17.8947 4.66367 17.9756 5.03234 18.0401C5.40178 18.1054 5.84823 18.149 6.37402 18.1708C6.89902 18.1926 7.31747 18.205 7.63014 18.2097C7.94281 18.2143 8.40093 18.2143 9.00371 18.2097C9.60728 18.205 9.93939 18.2034 10.0001 18.2034C10.0607 18.2034 10.3928 18.205 10.9964 18.2097C11.5992 18.2143 12.0573 18.2143 12.37 18.2097C12.6826 18.205 13.1011 18.1926 13.6261 18.1708C14.1519 18.149 14.5983 18.1054 14.9678 18.0401C15.3364 17.9756 15.6468 17.8947 15.8988 17.7998C16.3328 17.6256 16.7147 17.3743 17.0445 17.0445C17.3742 16.7148 17.6263 16.3321 17.7997 15.8981C17.8954 15.6469 17.9755 15.3365 18.0408 14.9671C18.1054 14.5984 18.1489 14.1512 18.1707 13.6262C18.1925 13.1012 18.2057 12.6819 18.2096 12.37C18.2143 12.0574 18.2143 11.5993 18.2096 10.9957C18.2057 10.3929 18.2034 10.0608 18.2034 10.0001C18.2034 9.93947 18.2057 9.60735 18.2096 9.00379C18.2143 8.40023 18.2143 7.94289 18.2096 7.63022C18.2057 7.31755 18.1925 6.8991 18.1707 6.37332C18.1489 5.84831 18.1054 5.40108 18.0408 5.03241C17.9755 4.66374 17.8954 4.35341 17.7997 4.1014C17.6263 3.6674 17.3742 3.28551 17.0445 2.95572C16.7147 2.62594 16.3328 2.37394 15.8988 2.20049C15.6468 2.10483 15.3364 2.02471 14.9678 1.95938C14.5983 1.89405 14.1519 1.85127 13.6261 1.82949C13.1011 1.80771 12.6826 1.79449 12.37 1.78982C12.0573 1.78593 11.5992 1.78593 10.9964 1.78982C10.3928 1.79449 10.0607 1.79682 10.0001 1.79682ZM20 10C20 11.988 19.9782 13.3631 19.9347 14.1277C19.8483 15.933 19.3101 17.3306 18.3208 18.32C17.3306 19.3101 15.933 19.8483 14.1277 19.9347C13.3639 19.9782 11.988 20 10 20C8.01198 20 6.63607 19.9782 5.87229 19.9347C4.06705 19.8483 2.66936 19.3101 1.67924 18.32C0.689897 17.3306 0.151668 15.933 0.0653341 14.1277C0.021778 13.3631 0 11.988 0 10C0 8.01198 0.021778 6.63607 0.0653341 5.87229C0.151668 4.06627 0.689897 2.66859 1.67924 1.67924C2.66936 0.689897 4.06705 0.151668 5.87229 0.0645563C6.63607 0.0210002 8.01198 0 10 0C11.988 0 13.3639 0.0210002 14.1277 0.0645563C15.933 0.151668 17.3306 0.689897 18.3208 1.67924C19.3101 2.66859 19.8483 4.06627 19.9347 5.87229C19.9782 6.63607 20 8.01198 20 10Z"
+                            fill="black" />
+                    </svg></a>
+                <a href=""><svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M19.894 2.08686C19.333 2.90736 18.655 3.60636 17.86 4.18386C17.8683 4.30086 17.8728 4.47636 17.8728 4.71111C17.8728 5.79936 17.7138 6.88536 17.395 7.96911C17.077 9.05361 16.594 10.0931 15.9453 11.0891C15.2965 12.0859 14.524 12.9664 13.6285 13.7321C12.733 14.4986 11.653 15.1091 10.3893 15.5659C9.12551 16.0219 7.77326 16.2499 6.33401 16.2499C4.06526 16.2499 1.98926 15.6431 0.10601 14.4296C0.39926 14.4626 0.72551 14.4799 1.08551 14.4799C2.96876 14.4799 4.64726 13.9016 6.12026 12.7466C5.24126 12.7301 4.45451 12.4601 3.76001 11.9366C3.06476 11.4139 2.58776 10.7464 2.32826 9.93411C2.60501 9.97611 2.86001 9.99711 3.09401 9.99711C3.45401 9.99711 3.81026 9.95136 4.16126 9.85911C3.22376 9.66636 2.44751 9.19986 1.83251 8.45886C1.21751 7.71786 0.90926 6.85836 0.90926 5.87886V5.82861C1.47851 6.14661 2.08976 6.31836 2.74301 6.34311C2.19026 5.97486 1.75076 5.49336 1.42451 4.89936C1.09826 4.30536 0.93476 3.66036 0.93476 2.96586C0.93476 2.22936 1.11851 1.54686 1.48751 0.919108C2.50001 2.16636 3.73226 3.16461 5.18501 3.91386C6.63701 4.66311 8.19176 5.07936 9.84926 5.16336C9.78251 4.84536 9.74876 4.53561 9.74876 4.23411C9.74876 3.11211 10.1448 2.15586 10.9353 1.36461C11.7265 0.574108 12.6828 0.178108 13.8048 0.178108C14.9763 0.178108 15.964 0.605608 16.7673 1.45911C17.68 1.28361 18.538 0.956608 19.3413 0.479608C19.0315 1.44261 18.4375 2.18736 17.5585 2.71461C18.337 2.63136 19.1155 2.42211 19.894 2.08686Z"
+                            fill="black" />
+                    </svg></a>
+            </div>
+        </nav>
+    </header>
+    <!------------------------------------------------------------- END HEADER ------------------------------------------------------------->
+
+
+    <article class="article-container">
+        <!------------------------------------------------------------- LEFT SECTION ------------------------------------------------------------->
+
+        <div id="left">
+            <article class="top-article first-left-article">
+                <div>
+                    <img src="https://via.placeholder.com/560" alt="image article">
+                </div>
+                <div class="grid-display top-article-width">
+                    <div class="img-title">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+                    <div class="rutrum">
+                        <a href="http://">Rutrum</a>
+                    </div>
+                    <div class="article-date">
+                        <p>Aujourd'hui</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <article class="top-article second-left-article">
+                <div>
+                    <img src="https://via.placeholder.com/560" alt="image article">
+                </div>
+                <div class="grid-display top-article-width">
+                    <div class="img-title">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+                    </div>
+
+                    <div class="rutrum">
+                        <a href="http://">Rutrum</a>
+                    </div>
+                </div>
+                <div class="play-button-container">
+                    <button class="play-button-style">
+                        <svg width="8" height="10" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0L12 7L0 14V0Z" fill="black" />
+                        </svg>
+                        Play
+                    </button>
+
+                </div>
+            </article>
+        </div>
+        <!------------------------------------------------------------- END LEFT SECTION ------------------------------------------------------------->
+
+
+        <!------------------------------------------------------------- RIGHT SECTION ------------------------------------------------------------->
+        <div id="right">
+            <article class="small-articles-section">
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Maecenas faucibus mollis interdum. Curabitur blandit</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Aujourd'hui</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Maecenas faucibus mollis interdum. Curabitur blandit</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date bump">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-30px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Maecenas faucibus mollis interdum. Curabitur blandit</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Aujourd'hui</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Maecenas faucibus mollis interdum. Curabitur blandit</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date bump-2">
+                            <p>Il y a 5j.</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-30px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+            </article>
+
+
+            <article class="top-article-right">
+                <div class="grid-display top-article-width-right">
+                    <div class="img-title">
+                        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit etiam</h2>
+                    </div>
+                    <div class="rutrum">
+                        <a href="http://">Rutrum</a>
+                    </div>
+                    <div class="article-date bump-3">
+                        <p>Il y a 3j.</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://via.placeholder.com/420" alt="image article">
+                </div>
+            </article>
+
+
+            <article class="small-articles-section">
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div>
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+            </article>
+
+
+            <!------------------------------------------------------------- NEWSLETTER ------------------------------------------------------------->
+            <div id="newsletter">
+                <div class="newsletter-inner">
+                    <div class="newsletter-title">
+                        <h2> NewsL<span>hey</span>tter</h2>
+                    </div>
+
+                    <form action="">
+                        <div class="newsletter-email-field">
+                            <svg class="finger-emoji-1" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 23.68H24V-0.32H0V23.68Z" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_8:6" transform="scale(0.015625)" />
+                                    </pattern>
+                                    <image id="image0_8:6" width="64" height="64"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+
+                            <input id="email" class="email-field input" type="text" placeholder="" name="mail" required>
+                            <label for="email" class="placeholder">Ton Email</label>
+
+                            <svg class="finger-emoji-2" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 23.68H24V-0.32H0V23.68Z" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_8:6" transform="scale(0.015625)" />
+                                    </pattern>
+                                    <image id="image0_8:6" width="64" height="64"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+                        </div>
+                        <div class="newsletter-button">
+                            <svg class="finger-emoji-3" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path d="M0 23.68H24V-0.32H0V23.68Z" fill="url(#pattern0)" />
+                                <defs>
+                                    <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                        <use xlink:href="#image0_8:6" transform="scale(0.015625)" />
+                                    </pattern>
+                                    <image id="image0_8:6" width="64" height="64"
+                                        xlink:href="data:image/png;base64,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" />
+                                </defs>
+                            </svg>
+                            <input class="submit-button hover-button" type="submit" value="Je m'abonne">
+                        </div>
+                    </form>
+
+                    <div class="newsletter-social-media">
+                        <div class="sm-icones">
+                            <a href=""><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M13.3333 10C13.3333 9.07989 13.0074 8.29432 12.3564 7.64332C11.7054 6.99231 10.9199 6.66642 9.99973 6.66642C9.07961 6.66642 8.29404 6.99231 7.64304 7.64332C6.99203 8.29432 6.66614 9.07989 6.66614 10C6.66614 10.9201 6.99203 11.7057 7.64304 12.3567C8.29404 13.0077 9.07961 13.3328 9.99973 13.3328C10.9199 13.3328 11.7054 13.0077 12.3564 12.3567C13.0074 11.7057 13.3333 10.9201 13.3333 10ZM15.1305 9.99994C15.1305 11.4233 14.6312 12.6343 13.6333 13.6322C12.6346 14.6309 11.4236 15.1302 10.0002 15.1302C8.57686 15.1302 7.36585 14.6309 6.36717 13.6322C5.36927 12.6343 4.86993 11.4233 4.86993 9.99994C4.86993 8.57581 5.36927 7.36479 6.36717 6.3669C7.36585 5.36822 8.57686 4.86966 10.0002 4.86966C11.4236 4.86966 12.6346 5.36822 13.6333 6.3669C14.6312 7.36479 15.1305 8.57581 15.1305 9.99994ZM16.5364 4.6612C16.5364 4.99099 16.4189 5.27332 16.1848 5.50743C15.9507 5.74155 15.6684 5.85899 15.3386 5.85899C15.0088 5.85899 14.7265 5.74155 14.4924 5.50743C14.2575 5.27332 14.1408 4.99099 14.1408 4.6612C14.1408 4.33142 14.2575 4.04909 14.4924 3.81497C14.7265 3.58008 15.0088 3.46341 15.3386 3.46341C15.6684 3.46341 15.9507 3.58008 16.1848 3.81497C16.4189 4.04909 16.5364 4.33142 16.5364 4.6612ZM10.0001 1.79682C9.93939 1.79682 9.60728 1.79449 9.00371 1.78982C8.40093 1.78593 7.94281 1.78593 7.63014 1.78982C7.31747 1.79449 6.89902 1.80771 6.37402 1.82949C5.84823 1.85127 5.40178 1.89405 5.03234 1.95938C4.66367 2.02471 4.35333 2.10483 4.10133 2.20049C3.66732 2.37394 3.28543 2.62594 2.95565 2.95572C2.62587 3.28551 2.37386 3.6674 2.20042 4.1014C2.10475 4.35341 2.02464 4.66374 1.9593 5.03241C1.89475 5.40108 1.85119 5.84831 1.82941 6.37332C1.80763 6.8991 1.79441 7.31755 1.79052 7.63022C1.78586 7.94289 1.78586 8.40023 1.79052 9.00379C1.79441 9.60735 1.79675 9.93947 1.79675 10.0001C1.79675 10.0608 1.79441 10.3929 1.79052 10.9957C1.78586 11.5993 1.78586 12.0574 1.79052 12.37C1.79441 12.6819 1.80763 13.1012 1.82941 13.6262C1.85119 14.1512 1.89475 14.5984 1.9593 14.9671C2.02464 15.3365 2.10475 15.6469 2.20042 15.8981C2.37386 16.3321 2.62587 16.7148 2.95565 17.0445C3.28543 17.3743 3.66732 17.6256 4.10133 17.7998C4.35333 17.8947 4.66367 17.9756 5.03234 18.0401C5.40178 18.1054 5.84823 18.149 6.37402 18.1708C6.89902 18.1926 7.31747 18.205 7.63014 18.2097C7.94281 18.2143 8.40093 18.2143 9.00371 18.2097C9.60728 18.205 9.93939 18.2034 10.0001 18.2034C10.0607 18.2034 10.3928 18.205 10.9964 18.2097C11.5992 18.2143 12.0573 18.2143 12.37 18.2097C12.6826 18.205 13.1011 18.1926 13.6261 18.1708C14.1519 18.149 14.5983 18.1054 14.9678 18.0401C15.3364 17.9756 15.6468 17.8947 15.8988 17.7998C16.3328 17.6256 16.7147 17.3743 17.0445 17.0445C17.3742 16.7148 17.6263 16.3321 17.7997 15.8981C17.8954 15.6469 17.9755 15.3365 18.0408 14.9671C18.1054 14.5984 18.1489 14.1512 18.1707 13.6262C18.1925 13.1012 18.2057 12.6819 18.2096 12.37C18.2143 12.0574 18.2143 11.5993 18.2096 10.9957C18.2057 10.3929 18.2034 10.0608 18.2034 10.0001C18.2034 9.93947 18.2057 9.60735 18.2096 9.00379C18.2143 8.40023 18.2143 7.94289 18.2096 7.63022C18.2057 7.31755 18.1925 6.8991 18.1707 6.37332C18.1489 5.84831 18.1054 5.40108 18.0408 5.03241C17.9755 4.66374 17.8954 4.35341 17.7997 4.1014C17.6263 3.6674 17.3742 3.28551 17.0445 2.95572C16.7147 2.62594 16.3328 2.37394 15.8988 2.20049C15.6468 2.10483 15.3364 2.02471 14.9678 1.95938C14.5983 1.89405 14.1519 1.85127 13.6261 1.82949C13.1011 1.80771 12.6826 1.79449 12.37 1.78982C12.0573 1.78593 11.5992 1.78593 10.9964 1.78982C10.3928 1.79449 10.0607 1.79682 10.0001 1.79682ZM20 10C20 11.988 19.9782 13.3631 19.9347 14.1277C19.8483 15.933 19.3101 17.3306 18.3208 18.32C17.3306 19.3101 15.933 19.8483 14.1277 19.9347C13.3639 19.9782 11.988 20 10 20C8.01198 20 6.63607 19.9782 5.87229 19.9347C4.06705 19.8483 2.66936 19.3101 1.67924 18.32C0.689897 17.3306 0.151668 15.933 0.0653341 14.1277C0.021778 13.3631 0 11.988 0 10C0 8.01198 0.021778 6.63607 0.0653341 5.87229C0.151668 4.06627 0.689897 2.66859 1.67924 1.67924C2.66936 0.689897 4.06705 0.151668 5.87229 0.0645563C6.63607 0.0210002 8.01198 0 10 0C11.988 0 13.3639 0.0210002 14.1277 0.0645563C15.933 0.151668 17.3306 0.689897 18.3208 1.67924C19.3101 2.66859 19.8483 4.06627 19.9347 5.87229C19.9782 6.63607 20 8.01198 20 10Z"
+                                        fill="black" />
+                                </svg></a>
+                            <a href=""><svg width="20" height="17" viewBox="0 0 20 17" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19.894 2.08686C19.333 2.90736 18.655 3.60636 17.86 4.18386C17.8683 4.30086 17.8728 4.47636 17.8728 4.71111C17.8728 5.79936 17.7138 6.88536 17.395 7.96911C17.077 9.05361 16.594 10.0931 15.9453 11.0891C15.2965 12.0859 14.524 12.9664 13.6285 13.7321C12.733 14.4986 11.653 15.1091 10.3893 15.5659C9.12551 16.0219 7.77326 16.2499 6.33401 16.2499C4.06526 16.2499 1.98926 15.6431 0.10601 14.4296C0.39926 14.4626 0.72551 14.4799 1.08551 14.4799C2.96876 14.4799 4.64726 13.9016 6.12026 12.7466C5.24126 12.7301 4.45451 12.4601 3.76001 11.9366C3.06476 11.4139 2.58776 10.7464 2.32826 9.93411C2.60501 9.97611 2.86001 9.99711 3.09401 9.99711C3.45401 9.99711 3.81026 9.95136 4.16126 9.85911C3.22376 9.66636 2.44751 9.19986 1.83251 8.45886C1.21751 7.71786 0.90926 6.85836 0.90926 5.87886V5.82861C1.47851 6.14661 2.08976 6.31836 2.74301 6.34311C2.19026 5.97486 1.75076 5.49336 1.42451 4.89936C1.09826 4.30536 0.93476 3.66036 0.93476 2.96586C0.93476 2.22936 1.11851 1.54686 1.48751 0.919108C2.50001 2.16636 3.73226 3.16461 5.18501 3.91386C6.63701 4.66311 8.19176 5.07936 9.84926 5.16336C9.78251 4.84536 9.74876 4.53561 9.74876 4.23411C9.74876 3.11211 10.1448 2.15586 10.9353 1.36461C11.7265 0.574108 12.6828 0.178108 13.8048 0.178108C14.9763 0.178108 15.964 0.605608 16.7673 1.45911C17.68 1.28361 18.538 0.956608 19.3413 0.479608C19.0315 1.44261 18.4375 2.18736 17.5585 2.71461C18.337 2.63136 19.1155 2.42211 19.894 2.08686Z"
+                                        fill="black" />
+                                </svg></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------------------- END NEWSLETTER ------------------------------------------------------------->
+
+            <article class="small-articles-section">
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <article class="small-articles-cell">
+                    <div class="grid-display">
+                        <div class="img-title">
+                            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                        </div>
+                        <div class="rutrum">
+                            <a href="http://">Rutrum</a>
+                        </div>
+                        <div class="article-date">
+                            <p>Hier</p>
+                        </div>
+                    </div>
+                    <div class="small-articles-img margin-left-11px">
+                        <img src="https://via.placeholder.com/104" alt="image article">
+                    </div>
+                </article>
+
+                <div>
+                    <div class="end-page-logo">
+                        <h2>H</h2>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2"
+                                stroke="url(#paint0_angular_8:122)" stroke-width="3" stroke-linecap="round" />
+                            <defs>
+                                <radialGradient id="paint0_angular_8:122" cx="0" cy="0" r="1"
+                                    gradientUnits="userSpaceOnUse"
+                                    gradientTransform="translate(10 10) rotate(-104.036) scale(8.24621)">
+                                    <stop stop-opacity="0" />
+                                    <stop offset="0.832998" />
+                                    <stop offset="0.903174" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <h2>Y</h2>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </article>
+    <!------------------------------------------------------------- END RIGHT SECTION ------------------------------------------------------------->
+
+    <footer>
+        <p>Bonne chance :)</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
